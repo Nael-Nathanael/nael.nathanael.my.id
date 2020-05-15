@@ -227,7 +227,7 @@ export class index extends Component {
                                 </Col>
                                 <Col lg={3} xs={4}>
                                     <SkillCard
-                                        src={process.env.PUBLIC_URL + "/images/prepro.png"}
+                                        src={process.env.PUBLIC_URL + "/images/ci.png"}
                                         alt="CodeIgniter"
                                         tooltip="Web MVC Framework on PHP"
                                         text="CodeIgniter"
@@ -235,7 +235,7 @@ export class index extends Component {
                                 </Col>
                                 <Col lg={3} xs={4}>
                                     <SkillCard
-                                        src={process.env.PUBLIC_URL + "/images/prepro.png"}
+                                        src={process.env.PUBLIC_URL + "/images/php-logo.png"}
                                         alt="PHP"
                                         tooltip="Programming Language for Website Development"
                                         text="PHP"
