@@ -1,0 +1,78 @@
+#main {
+    background-color: black;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+.full-page {
+    height: 100vh;
+}
+
+.circle {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.scene {
+    height: 100%;
+}
+
+.scene .aesir {
+    top: calc(50% - 150px) !important;
+    left: calc(50% - 150px) !important;
+    z-index: 5;
+}
+
+.bot {
+    top: 90% !important;
+    animation-name: lefter2;
+    transform: rotate(180deg) !important;
+}
+
+.top {
+    top: 10% !important;
+    animation-name: lefter;
+}
+
+.line {
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: 200%;
+    background: url("../images/cYtus_top_border.png") repeat-x;
+    z-index: 4;
+    height: 3px;
+}
+
+@keyframes lefter {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -200px;
+    }
+}
+
+@keyframes lefter2 {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 0;
+    }
+}

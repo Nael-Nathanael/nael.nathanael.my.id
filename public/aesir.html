@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Nathanael</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/aesir.css" />
+</head>
+
+<body>
+    <div id="main" class="full-page">
+        <div id="scene" class="scene">
+            <div class="aesir" data-depth="0.4">
+                <img src="./images/aesir.svg" width="300px" height="300px">
+            </div>
+            <div class="aesir" data-depth="0.35">
+                <img src="./images/aesir.svg" width="300px" height="300px">
+            </div>
+            <div class="aesir" data-depth="0.3">
+                <img src="./images/aesir.svg" width="300px" height="300px">
+            </div>
+            <div class="aesir" data-depth="0.45">
+                <img src="./images/aesir.svg" width="300px" height="300px">
+            </div>
+            <div class="line top" data-depth="0">
+            </div>
+            <div class="line bot" data-depth="0">
+            </div>
+        </div>
+    </div>
+
+    <!-- Parallax.js -->
+    <script src="./js/parallax.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
+</body>
+
+</html>
