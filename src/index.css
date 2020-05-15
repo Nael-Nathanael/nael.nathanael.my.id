@@ -177,10 +177,7 @@ code {
 .custom-button a:hover {
     opacity: 1;
     text-decoration: none;
-}
-
-a:hover {
-    color: rgb(143, 8, 143) !important;
+    color: white;
 }
 
 .custom-button a {
