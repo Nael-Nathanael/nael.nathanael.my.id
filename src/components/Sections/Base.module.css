@@ -1,11 +1,9 @@
-.nav_base {
-    min-width: 300px;
-    height: 100vh;
-    overflow: auto;
-    border-right: solid 1px white;
+.base_layout {
+    display: flex;
+    flex-direction: row;
 }
 
-.navbar {
+.header {
     margin-bottom: 2rem;
     padding-top: 1.25rem;
     padding-bottom: 1rem;

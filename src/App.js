@@ -7,6 +7,7 @@ import {
 import index from 'pages/landing/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactTooltip from 'react-tooltip';
+import Landing from "pages/Admin/Landing";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <ReactTooltip className="tooler" />
             <Switch>
                 <Route exact path="/" component={index} />
+                <Route exact path="/admin" component={Landing} />
             </Switch>
         </Router>
     );

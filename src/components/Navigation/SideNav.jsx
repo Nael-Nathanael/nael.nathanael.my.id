@@ -1,11 +1,22 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import classes from "./SideNav.module.css";
+import NavItem from "components/Navigation/NavElement/NavItem";
+import {admin_url} from "Config/UrlConfig_admin";
+import {Container} from "react-bootstrap";
 
 export class SideNav extends Component {
     render() {
         return (
-            <div>
+            <div className={classes.nav_base}>
+                <Container>
+                    <nav className={classes.navbar}>
+                        <h3 className={"text-center"}>
+                            Brand
+                        </h3>
+                    </nav>
 
+                    <NavItem data={admin_url}/>
+                </Container>
             </div>
         )
     }
