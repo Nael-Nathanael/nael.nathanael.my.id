@@ -73,7 +73,7 @@ export class index extends Component {
                                             <h3>Hobby</h3>
                                         </div>
                                         <Row>
-                                            <Col xs={6}>
+                                            <Col xs={12} md={6}>
                                                 <SkillCard
                                                     src={process.env.PUBLIC_URL + "/images/weblogo.png"}
                                                     alt="web logo"
@@ -81,7 +81,7 @@ export class index extends Component {
                                                     text="Web Applications Development"
                                                 />
                                             </Col>
-                                            <Col xs={6}>
+                                            <Col xs={12} md={6}>
                                                 <SkillCard
                                                     src={process.env.PUBLIC_URL + "/images/android.png"}
                                                     alt="android"
@@ -101,7 +101,7 @@ export class index extends Component {
                                             <h3>Experience</h3>
                                         </div>
                                         <Row>
-                                            <Col xs={6}>
+                                            <Col xs={12} md={6}>
                                                 <SkillCard
                                                     src={process.env.PUBLIC_URL + "/images/dsc.png"}
                                                     alt="DSC UI"
@@ -109,7 +109,7 @@ export class index extends Component {
                                                     text="Developer Student Club"
                                                 />
                                             </Col>
-                                            <Col xs={6}>
+                                            <Col xs={12} md={6}>
                                                 <SkillCard
                                                     src={process.env.PUBLIC_URL + "/images/uiyea.png"}
                                                     alt="UIYEA"
@@ -145,7 +145,7 @@ export class index extends Component {
 
                             {/* Showcase */}
                             <Row className="text-center">
-                                <Col lg={3} xs={4}>
+                                <Col lg={3} xs={6} sm={4} md={4}>
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/spring.jpg"}
                                         alt="Spring Boot"
@@ -153,7 +153,7 @@ export class index extends Component {
                                         text="Spring Boot"
                                     />
                                 </Col>
-                                <Col lg={3} xs={4}>
+                                <Col lg={3} xs={6} sm={4} md={4}>
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/django.png"}
                                         alt="django"
@@ -161,7 +161,7 @@ export class index extends Component {
                                         text="Django"
                                     />
                                 </Col>
-                                <Col lg={3} xs={4}>
+                                <Col lg={3} xs={6} sm={4} md={4}>
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/flask.png"}
                                         alt="Flask"
@@ -169,7 +169,7 @@ export class index extends Component {
                                         text="Flask"
                                     />
                                 </Col>
-                                <Col lg={3} xs={4}>
+                                <Col lg={3} xs={6} sm={4} md={4}>
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/html.png"}
                                         alt="HTML 5"
@@ -177,7 +177,7 @@ export class index extends Component {
                                         text="HTML5"
                                     />
                                 </Col>
-                                <Col lg={3} xs={4}>
+                                <Col lg={3} xs={6} sm={4} md={4}>
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/css.png"}
                                         alt="CSS Logo"
@@ -185,7 +185,7 @@ export class index extends Component {
                                         text="CSS3"
                                     />
                                 </Col>
-                                <Col lg={3} xs={4}>
+                                <Col lg={3} xs={6} sm={4} md={4}>
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/js.png"}
                                         alt="Javascript"
@@ -193,7 +193,7 @@ export class index extends Component {
                                         text="Javascript"
                                     />
                                 </Col>
-                                <Col lg={3} xs={4}>
+                                <Col lg={3} xs={6} sm={4} md={4}>
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/react.png"}
                                         alt="ReactJS"
@@ -201,7 +201,7 @@ export class index extends Component {
                                         text="React"
                                     />
                                 </Col>
-                                <Col lg={3} xs={4}>
+                                <Col lg={3} xs={6} sm={4} md={4}>
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/psd.png"}
                                         alt="Photoshop Logo"
@@ -209,7 +209,7 @@ export class index extends Component {
                                         text="Adobe Photoshop"
                                     />
                                 </Col>
-                                <Col lg={3} xs={4}>
+                                <Col lg={3} xs={6} sm={4} md={4}>
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/ae.png"}
                                         alt="After Effect Logo"
@@ -217,7 +217,7 @@ export class index extends Component {
                                         text="Adobe After Effect"
                                     />
                                 </Col>
-                                <Col lg={3} xs={4}>
+                                <Col lg={3} xs={6} sm={4} md={4}>
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/prepro.png"}
                                         alt="Premiere Pro Logo"
@@ -225,7 +225,7 @@ export class index extends Component {
                                         text="Adobe Premiere Pro"
                                     />
                                 </Col>
-                                <Col lg={3} xs={4}>
+                                <Col lg={3} xs={6} sm={4} md={4}>
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/ci.png"}
                                         alt="CodeIgniter"
@@ -233,7 +233,7 @@ export class index extends Component {
                                         text="CodeIgniter"
                                     />
                                 </Col>
-                                <Col lg={3} xs={4}>
+                                <Col lg={3} xs={6} sm={4} md={4}>
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/php-logo.png"}
                                         alt="PHP"
