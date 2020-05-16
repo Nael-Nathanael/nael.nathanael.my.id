@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Avatar from '../Elements/Avatar'
+import Avatar from 'components/Elements/Avatar'
 
 export class Front extends Component {
     render() {

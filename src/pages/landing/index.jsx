@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import ScrollDownButton from '../../components/Button/ScrollDownButton';
-import Aesir from '../../components/Background/Aesir';
-import Front from '../../components/Sections/Front';
+import ScrollDownButton from 'components/Button/ScrollDownButton';
+import Aesir from 'components/Background/Aesir';
+import Front from 'components/Sections/Front';
 import { Container, Row, Col } from 'react-bootstrap';
-import SkillCard from '../../components/Elements/SkillCard';
+import SkillCard from 'components/Elements/SkillCard';
 import './animate.css';
 
 export class index extends Component {

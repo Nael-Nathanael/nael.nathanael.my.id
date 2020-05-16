@@ -4,7 +4,7 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-import index from './pages/landing/index';
+import index from 'pages/landing/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactTooltip from 'react-tooltip';
 
