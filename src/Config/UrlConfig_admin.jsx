@@ -1,33 +1,32 @@
 import HomeRoundedIcon from "@material-ui/icons/HomeRounded";
 import React from "react";
+import Stats from "pages/Admin/Blog_Management/Stats";
+import Summary from "pages/Admin/Blog_Management/Summary";
+import Access from "pages/Admin/Blog_Management/Access";
 
 export const admin_url = [
     {
         icon: <HomeRoundedIcon/>,
         name: "Home",
-        link: "#"
+        link: "/Admin",
+        component: <Summary />
     }, {
         divider: true
     }, {
         summary: "Blog Management",
         content: [
             {
-                name: "link1",
-                link: "#"
+                name: "Stats",
+                link: "/Admin/Blog/Stats",
+                component: <Stats />
             }, {
-                name: "link1",
-                link: "#"
-            }
-        ]
-    }, {
-        summary: "Another Link",
-        content: [
-            {
-                name: "link1",
-                link: "#"
+                name: "Summary",
+                link: "/Admin/Blog/Summary",
+                component: <Summary />
             }, {
-                name: "link1",
-                link: "#"
+                name: "Access",
+                link: "/Admin/Blog/Access",
+                component: <Access />
             }
         ]
     }

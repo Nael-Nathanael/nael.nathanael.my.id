@@ -14,8 +14,8 @@ function App() {
         <Router>
             <ReactTooltip className="tooler" />
             <Switch>
-                <Route exact path="/" component={index} />
-                <Route exact path="/admin" component={Landing} />
+                <Route path="/admin" component={Landing} />
+                <Route path="/" component={index} />
             </Switch>
         </Router>
     );

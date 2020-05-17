@@ -75,10 +75,10 @@ export default function NavItem(props) {
             {props.data && props.data.map(
                 (data, index) => {
                     if (data.divider) {
-                        return <LinkDivider />
+                        return <LinkDivider key={index}/>
                     } else if (data.name) {
                         return (
-                            <ListItem button component={"a"} href={data.link}>
+                            <ListItem button key={index} component={"a"} href={data.link}>
                                 <ListItemIcon>
                                     {data.icon}
                                 </ListItemIcon>
@@ -88,6 +88,7 @@ export default function NavItem(props) {
                     }
                     return (
                         <ExpansionPanel
+                            key={index}
                             square
                             expanded={expanded === 'panel' + index}
                             onChange={handleChange('panel' + index)}
@@ -107,8 +108,8 @@ export default function NavItem(props) {
                             </ExpansionPanelSummary>
 
                             <ExpansionPanelDetails className={"flex-column"}>
-                                {data.content.map(content =>
-                                    <ListItem button component={"a"} href={content.link}>
+                                {data.content.map((content, c_index) =>
+                                    <ListItem button component={"a"} href={content.link} key={c_index}>
                                         <ListItemIcon>
                                             {content.icon ? content.icon : <ChevronRightIcon/>}
                                         </ListItemIcon>

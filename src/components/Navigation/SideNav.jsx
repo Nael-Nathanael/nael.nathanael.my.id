@@ -9,11 +9,11 @@ export class SideNav extends Component {
         return (
             <div className={classes.nav_base}>
                 <Container>
-                    <nav className={classes.navbar}>
+                    <div className={classes.navbar}>
                         <h3 className={"text-center"}>
                             Brand
                         </h3>
-                    </nav>
+                    </div>
 
                     <NavItem data={admin_url}/>
                 </Container>
