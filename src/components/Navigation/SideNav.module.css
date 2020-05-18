@@ -3,6 +3,7 @@
     height: 100vh;
     overflow: auto;
     border-right: solid 1px white;
+    color: white !important;
 }
 
 .navbar {

@@ -3,6 +3,8 @@ import React from "react";
 import Stats from "pages/Admin/Blog_Management/Stats";
 import Summary from "pages/Admin/Blog_Management/Summary";
 import Access from "pages/Admin/Blog_Management/Access";
+import CreatePost from "pages/Admin/Blog_Management/CreatePost";
+import UpdatePost from "pages/Admin/Blog_Management/UpdatePost";
 
 export const admin_url = [
     {
@@ -27,6 +29,16 @@ export const admin_url = [
                 name: "Access",
                 link: "/Admin/Blog/Access",
                 component: <Access />
+            }, {
+                name: "Create",
+                link: "/Admin/Blog/Create",
+                component: <CreatePost />,
+                hidden: true
+            }, {
+                name: "Update",
+                link: "/Admin/Blog/Update",
+                component: <UpdatePost />,
+                hidden: true
             }
         ]
     }

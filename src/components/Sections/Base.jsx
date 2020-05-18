@@ -13,6 +13,7 @@ class Base extends Component {
                     <div className={"w-100"}>
                         <Container>
                             <nav className={classes.header}>
+                                    {this.props.header}
                             </nav>
                             <div>
                                 {this.props.children}

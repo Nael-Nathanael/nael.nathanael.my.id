@@ -52,9 +52,9 @@ export class index extends Component {
                             {/* Profile Description */}
                             <section className="py-lg-0 py-5">
                                 <div className="section-title">
-                                    <h1>Call me <span className="contrass-text px-3 bg-white">Nael</span></h1>
+                                    <h1 className={"text-white"}>Call me <span className="contrass-text px-3 bg-white">Nael</span></h1>
                                 </div>
-                                <div className="section-content">
+                                <div className="section-content text-white">
                                     <p>A hardworking and ambitious person in every aspects. I have a great passion for web
                                     developments. Having experience in web development project team, I am eager to be
                                     challenged in order to grow and further improve. Currently an undergraduate student of
@@ -254,15 +254,15 @@ export class index extends Component {
                 {/* About Me */}
 
                 {/* Contact Me */}
-                <div id="contact" class="pt-5 text-center container text-center">
+                <div id="contact" className="pt-5 text-center container text-center">
 
-                    <a class="d-flex h-100 w-100 btn-highlight py-3" id="invite-btn" href="mailto:nael.nathanael71@gmail.com"> </a>
+                    <a className="d-flex h-100 w-100 btn-highlight py-3" id="invite-btn" href="mailto:nael.nathanael71@gmail.com"> </a>
 
-                    <i>or</i>
+                    <i className={"text-white"}>or</i>
 
-                    <h1 class="py-3"><span class="contrass-text px-3 bg-white">Contact</span> Me</h1>
+                    <h1 className="py-3 text-white"><span className="contrass-text px-3 bg-white">Contact</span> Me</h1>
 
-                    <p id="contact-links">
+                    <p id="contact-links" className="transition-smooth">
                         <a href="https://web.facebook.com/nathanael089503386642">Facebook</a>
                         <a href="https://api.whatsapp.com/send?phone=6289503386642">WhatsApp</a>
                         <a href="https://twitter.com/L__NathanaeL">Twitter</a>

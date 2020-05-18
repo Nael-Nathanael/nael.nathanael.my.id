@@ -6,7 +6,6 @@ import {getSortedRoute} from "Config/SystemService/Routing";
 
 export default class Landing extends Component {
     render() {
-
         return (
             <Base>
                 <Switch>

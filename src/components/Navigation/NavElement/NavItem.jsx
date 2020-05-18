@@ -16,6 +16,7 @@ const ExpansionPanel = withStyles({
     root: {
         border: '1px solid rgba(0, 0, 0, .125)',
         boxShadow: 'none',
+        color: "white",
         backgroundColor: 'transparent',
         '&:not(:last-child)': {
             borderBottom: 0,
@@ -35,6 +36,7 @@ const ExpansionPanelSummary = withStyles({
         backgroundColor: 'rgba(0, 0, 0, .03)',
         borderBottom: '1px solid rgba(0, 0, 0, .125)',
         marginBottom: -1,
+        color: "white",
         minHeight: 56,
         '&$expanded': {
             minHeight: 56,
@@ -76,10 +78,10 @@ export default function NavItem(props) {
                 (data, index) => {
                     if (data.divider) {
                         return <LinkDivider key={index}/>
-                    } else if (data.name) {
+                    } else if (!!data.name && !data.hidden) {
                         return (
-                            <ListItem button key={index} component={"a"} href={data.link}>
-                                <ListItemIcon>
+                            <ListItem button key={index} component={"a"} href={data.link} className={"special-a"}>
+                                <ListItemIcon className={"text-white special-a"}>
                                     {data.icon}
                                 </ListItemIcon>
                                 <ListItemText primary={data.name}/>
@@ -98,9 +100,10 @@ export default function NavItem(props) {
                                 aria-controls={"panel" + index + "d-content"}
                                 id={"panel" + index + "d-header"}
                                 expandIcon={<ExpandMoreIcon/>}
+                                className={"special-a"}
                             >
-                                <ListItemIcon>
-                                    <MenuRoundedIcon/>
+                                <ListItemIcon className={"text-white"}>
+                                    <MenuRoundedIcon className={"text-white"}/>
                                 </ListItemIcon>
                                 <Typography>
                                     {data.summary}
@@ -108,13 +111,20 @@ export default function NavItem(props) {
                             </ExpansionPanelSummary>
 
                             <ExpansionPanelDetails className={"flex-column"}>
-                                {data.content.map((content, c_index) =>
-                                    <ListItem button component={"a"} href={content.link} key={c_index}>
-                                        <ListItemIcon>
-                                            {content.icon ? content.icon : <ChevronRightIcon/>}
-                                        </ListItemIcon>
-                                        <ListItemText primary={content.name}/>
-                                    </ListItem>
+                                {data.content.map((content, c_index) => {
+                                        if (!content.hidden) {
+                                            return (
+                                                <ListItem button component={"a"} href={content.link} key={c_index}
+                                                          className={"special-a"}>
+                                                    <ListItemIcon className={"text-white"}>
+                                                        {content.icon ? content.icon : <ChevronRightIcon/>}
+                                                    </ListItemIcon>
+                                                    <ListItemText primary={content.name}/>
+                                                </ListItem>
+                                            )
+                                        }
+                                        return "";
+                                    }
                                 )}
                             </ExpansionPanelDetails>
                         </ExpansionPanel>

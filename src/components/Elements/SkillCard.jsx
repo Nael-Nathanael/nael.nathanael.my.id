@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class SkillCard extends Component {
     render() {
         return (
-            <div class="section-content">
+            <div className="section-content">
                 <img
                     src={this.props.src}
                     alt={this.props.alt}
@@ -16,7 +16,7 @@ export class SkillCard extends Component {
                     data-background-color="black"
                     data-tip={this.props.tooltip}
                 />
-                <p class="text-center">
+                <p className="text-center">
                     {this.props.text}
                 </p>
             </div>
