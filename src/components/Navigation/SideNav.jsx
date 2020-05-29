@@ -1,25 +1,42 @@
-import React, {Component} from 'react';
-import classes from "./SideNav.module.css";
-import NavItem from "components/Navigation/NavElement/NavItem";
-import {admin_url} from "Config/UrlConfig_admin";
-import {Container} from "react-bootstrap";
+import React, { Component } from 'react'
+import { MDBListGroup, MDBListGroupItem, MDBIcon, MDBBox, MDBRow, MDBCol } from 'mdbreact';
+import { NavLink } from 'react-router-dom';
 
 export class SideNav extends Component {
+
+    
     render() {
         return (
-            <div className={classes.nav_base}>
-                <Container>
-                    <div className={classes.navbar}>
-                        <h3 className={"text-center"}>
-                            Brand
-                        </h3>
-                    </div>
-
-                    <NavItem data={admin_url}/>
-                </Container>
-            </div>
-        )
+            <MDBBox style={{ width: "250px", height: "100vh" }} className="purple-gradient">
+                <MDBListGroup>
+                    <NavLink exact={true} to="/" activeClassName="activeClass">
+                        <MDBListGroupItem>
+                            <MDBRow className="w-100">
+                                <MDBCol sm="2">
+                                    <MDBIcon icon="chart-pie" />
+                                </MDBCol>
+                                <MDBCol sm="10">
+                                    Dashboard
+                                </MDBCol>
+                            </MDBRow>
+                        </MDBListGroupItem>
+                    </NavLink>
+                    <NavLink to="/profile" activeClassName="activeClass">
+                        <MDBListGroupItem>
+                            <MDBRow className="w-100">
+                                <MDBCol sm="2">
+                                    <MDBIcon icon="user" />
+                                </MDBCol>
+                                <MDBCol sm="10">
+                                    Profile
+                                </MDBCol>
+                            </MDBRow>
+                        </MDBListGroupItem>
+                    </NavLink>
+                </MDBListGroup>
+            </MDBBox>
+        );
     }
 }
 
-export default SideNav
+export default SideNav;

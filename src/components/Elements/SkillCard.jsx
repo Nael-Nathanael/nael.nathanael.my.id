@@ -16,7 +16,7 @@ export class SkillCard extends Component {
                     data-background-color="black"
                     data-tip={this.props.tooltip}
                 />
-                <p className="text-center">
+                <p className="text-center text-white">
                     {this.props.text}
                 </p>
             </div>

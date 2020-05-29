@@ -7,15 +7,15 @@ import {
 import index from 'pages/landing/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactTooltip from 'react-tooltip';
-import Landing from "pages/Admin/Landing";
+import Base from 'pages/admin/Base';
 
 function App() {
     return (
         <Router>
-            <ReactTooltip className="tooler" />
+            <ReactTooltip className="text-center" style={{ width: "200px" }} />
             <Switch>
-                <Route path="/admin" component={Landing} />
-                <Route path="/" component={index} />
+                <Route exact path="/admin" component={Base} />
+                <Route exact path="/" component={index} />
             </Switch>
         </Router>
     );

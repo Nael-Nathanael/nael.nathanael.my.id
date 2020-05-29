@@ -1,63 +1,65 @@
 import React, { Component } from 'react'
 import Avatar from 'components/Elements/Avatar'
+import { Container, Row, Col } from 'react-bootstrap'
+import { MDBTypography, MDBBox } from 'mdbreact'
 
 export class Front extends Component {
     render() {
         return (
-            <div className="fullscreen bg-black d-flex flex-row justify-content-center align-items-center mb-5">
+            <MDBBox className={"d-flex flex-row justify-content-center align-items-center bg-black mb-2"} style={{ height: "100vh" }}>
 
                 {/* Wide Screen Version */}
-                <div className="container clearfix front d-none d-md-block">
+                <Container className={"clearfix d-none d-md-block"} style={{ zIndex: 1 }}>
 
                     {/* Avatar */}
-                    <Avatar height="130px" width="130px" className="float-left avatar mr-4" />
+                    <Avatar height="130px" width="130px" className={"float-left rounded-circle mr-4"} />
                     {/* Avatar */}
 
                     {/* Description */}
-                    <div className="simple-desc d-flex justify-content-center flex-column">
-                        <h2 className="text-uppercase text-white title-text">
+                    <MDBBox className={"d-flex flex-column justify-content-center "} style={{ minHeight: "130px" }}>
+                        <MDBTypography tag="h3" className="text-uppercase text-white">
                             Nathanael
-                        </h2>
-                        <h1 className="text-uppercase text-white title-text">
+                        </MDBTypography>
+                        <MDBTypography tag="h1" className="text-uppercase text-white">
                             I am{" "}
-                            <span id="toCycle">
+                            <MDBBox tag="span" id="toCycle">
                                 Web Developer | Software Engineer
-                            </span>
-                        </h1>
-                    </div>
+                            </MDBBox>
+                        </MDBTypography>
+                    </MDBBox>
                     {/* Description */}
 
-                </div>
+                </Container>
                 {/* Wide Screen Version */}
 
                 {/* <!--Mobile Version--> */}
-                <div className="container clearfix front d-md-none d-block text-center">
+                <Container className="clearfix d-md-none d-block text-center" style={{ zIndex: 1 }}>
 
                     {/* <!--Upper Row--> */}
-                    <div className="d-flex justify-content-center align-items-center">
+                    <MDBBox className="d-flex justify-content-center align-items-center">
                         {/* Avatar */}
-                        <Avatar height="130px" width="130px" className="avatar" />
+                        <Avatar height="130px" width="130px" className="rounded-circle" />
                         {/* Avatar */}
-                    </div>
+                    </MDBBox>
                     {/* <!--Upper Row End--> */}
 
                     {/* <!--Lower Row--> */}
-                    <div className="row">
-                        <div className="col align-items-center">
-                            <h2 className="text-uppercase text-white title-text pt-2">Nathanael</h2>
-                            <h1 className="text-uppercase text-white title-text">I am<br />
-                                <span id="toCycleMobile">
+                    <Row>
+                        <Col className="align-items-center">
+                            <MDBTypography tag="h3" className="text-uppercase text-white pt-2">Nathanael</MDBTypography>
+                            <MDBTypography tag="h1" className="text-uppercase text-white">I am<br />
+                                <MDBBox tag="span" id="toCycleMobile">
                                     Web Developer | Software Engineer
-                                </span>
-                            </h1>
-                        </div>
-                    </div>
+                                </MDBBox>
+                            </MDBTypography>
+                        </Col>
+                    </Row>
                     {/* <!--Lower Row End--> */}
 
-                </div>
+                </Container>
                 {/* <!--Mobile Version End--> */}
 
-            </div>
+            </MDBBox>
         )
     }
 }

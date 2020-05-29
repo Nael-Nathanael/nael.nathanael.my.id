@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 import ScrollDownButton from 'components/Button/ScrollDownButton';
 import Aesir from 'components/Background/Aesir';
 import Front from 'components/Sections/Front';
-import { Container, Row, Col } from 'react-bootstrap';
 import SkillCard from 'components/Elements/SkillCard';
 import './animate.css';
+import { MDBBox, MDBTypography, MDBRow, MDBContainer, MDBCol } from 'mdbreact';
 
 export class index extends Component {
     render() {
         return (
-            <div className="pageContent">
+            <MDBBox className="bg-black" >
 
-                <div id="landing">
+                <MDBBox>
 
                     {/* Scroll Button Animation */}
                     <ScrollDownButton />
@@ -25,254 +25,254 @@ export class index extends Component {
                     <Front />
                     {/* Main Content */}
 
-                </div>
+                </MDBBox>
                 {/* Home Screen End */}
 
                 {/* About Me */}
-                <Container id="about" className="py-5">
+                <MDBContainer id="about" className="py-5">
 
                     {/* Upper Row */}
-                    <Row>
+                    <MDBRow>
 
                         {/* Left Side */}
-                        <Col lg={4}>
+                        <MDBCol lg="4">
 
                             {/* Profile Image */}
-                            <div className="justify-content-center align-items-center d-flex">
-                                <img src={process.env.PUBLIC_URL + "/images/avatar-full.jpeg"} className="w-100 rounded fullAva" alt="full face" />
-                            </div>
+                            <MDBBox className="justify-content-center align-items-center d-flex">
+                                <img src={process.env.PUBLIC_URL + "/images/avatar-full.jpeg"} className="w-100 rounded" alt="full face" style={{ maxWidth: "300px" }} />
+                            </MDBBox>
                             {/* Profile Image */}
 
-                        </Col>
+                        </MDBCol>
                         {/* Left Side */}
 
                         {/* Right Side */}
-                        <Col lg={8} className="px-5">
+                        <MDBCol lg="8" className="px-5">
 
                             {/* Profile Description */}
-                            <section className="py-lg-0 py-5">
-                                <div className="section-title">
-                                    <h1 className={"text-white"}>Call me <span className="contrass-text px-3 bg-white">Nael</span></h1>
-                                </div>
-                                <div className="section-content text-white">
-                                    <p>A hardworking and ambitious person in every aspects. I have a great passion for web
+                            <section className="py-lg-0 py-5 w-100" style={{ width: "100vh" }}>
+                                <MDBBox className="pb-1 text-white">
+                                    <MDBTypography tag="h1" className={"text-white"}>Call me <span className="px-3 bg-white" style={{ color: "black" }}>Nael</span></MDBTypography>
+                                </MDBBox>
+                                <MDBBox className="lead text-white">
+                                    <MDBBox tag="p">A hardworking and ambitious person in every aspects. I have a great passion for web
                                     developments. Having experience in web development project team, I am eager to be
                                     challenged in order to grow and further improve. Currently an undergraduate student of
-                                    Information System study in University of Indonesia.</p>
-                                </div>
+                                    Information System study in University of Indonesia.</MDBBox>
+                                </MDBBox>
                             </section>
                             {/* Profile Description */}
 
                             {/* Background */}
-                            <Row>
+                            <MDBRow>
 
                                 {/* Hobby */}
-                                <Col lg={6}>
-                                    <section class="text-center">
-                                        <div class="section-title">
-                                            <h3>Hobby</h3>
-                                        </div>
-                                        <Row>
-                                            <Col xs={12} md={6}>
+                                <MDBCol lg="6">
+                                    <MDBBox tag="section" className="text-center">
+                                        <MDBBox className="pb-1 text-white">
+                                            <MDBTypography tag="h3">Hobby</MDBTypography>
+                                        </MDBBox>
+                                        <MDBRow>
+                                            <MDBCol xs="12" md="6">
                                                 <SkillCard
                                                     src={process.env.PUBLIC_URL + "/images/weblogo.png"}
                                                     alt="web logo"
                                                     tooltip="Currently learning the concept of Progressive Web Applications."
                                                     text="Web Applications Development"
                                                 />
-                                            </Col>
-                                            <Col xs={12} md={6}>
+                                            </MDBCol>
+                                            <MDBCol xs="12" md="6">
                                                 <SkillCard
                                                     src={process.env.PUBLIC_URL + "/images/android.png"}
                                                     alt="android"
                                                     tooltip="Currently learning Android Studio and Flutter."
                                                     text="Android App Development"
                                                 />
-                                            </Col>
-                                        </Row>
-                                    </section>
-                                </Col>
+                                            </MDBCol>
+                                        </MDBRow>
+                                    </MDBBox>
+                                </MDBCol>
                                 {/* Hobby */}
 
                                 {/* Experience */}
-                                <Col lg={6}>
-                                    <section className="text-center">
-                                        <div class="section-title">
+                                <MDBCol lg="6">
+                                    <MDBBox tag="section" className="text-center">
+                                        <MDBBox className="pb-1 text-white">
                                             <h3>Experience</h3>
-                                        </div>
-                                        <Row>
-                                            <Col xs={12} md={6}>
+                                        </MDBBox>
+                                        <MDBRow>
+                                            <MDBCol xs="12" md="6">
                                                 <SkillCard
                                                     src={process.env.PUBLIC_URL + "/images/dsc.png"}
                                                     alt="DSC UI"
                                                     tooltip="Developer Student Club in University of Indonesia (2019 until now)"
                                                     text="Developer Student Club"
                                                 />
-                                            </Col>
-                                            <Col xs={12} md={6}>
+                                            </MDBCol>
+                                            <MDBCol xs="12" md="6">
                                                 <SkillCard
                                                     src={process.env.PUBLIC_URL + "/images/uiyea.png"}
                                                     alt="UIYEA"
                                                     tooltip="Lead Developer on UI YEA 2019 Website"
                                                     text="UI YEA 2019 Website"
                                                 />
-                                            </Col>
-                                        </Row>
-                                    </section>
-                                </Col>
+                                            </MDBCol>
+                                        </MDBRow>
+                                    </MDBBox>
+                                </MDBCol>
                                 {/* Experience */}
 
-                            </Row>
+                            </MDBRow>
                             {/* Background */}
 
-                        </Col>
+                        </MDBCol>
                         {/* Right Side */}
 
-                    </Row>
+                    </MDBRow>
                     {/* Upper Row */}
 
                     {/* Lower Row */}
-                    <Row className="py-5">
+                    <MDBRow className="py-5">
 
                         {/* Skill */}
-                        <section>
+                        <MDBBox tag="section">
 
                             {/* Title */}
-                            <div class="section-title text-center">
-                                <h1>Skills</h1>
-                            </div>
+                            <MDBBox className="pb-1 text-white text-center">
+                                <MDBTypography tag="h1">Skills</MDBTypography>
+                            </MDBBox>
                             {/* Title */}
 
                             {/* Showcase */}
-                            <Row className="text-center">
-                                <Col lg={3} xs={6} sm={4} md={4}>
+                            <MDBRow className="text-center">
+                                <MDBCol lg="3" xs="6" sm="4" md="4">
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/spring.jpg"}
                                         alt="Spring Boot"
                                         tooltip="Java-based Framework to Create Micro Services"
                                         text="Spring Boot"
                                     />
-                                </Col>
-                                <Col lg={3} xs={6} sm={4} md={4}>
+                                </MDBCol>
+                                <MDBCol lg="3" xs="6" sm="4" md="4">
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/django.png"}
                                         alt="django"
                                         tooltip="Python Web Framework"
                                         text="Django"
                                     />
-                                </Col>
-                                <Col lg={3} xs={6} sm={4} md={4}>
+                                </MDBCol>
+                                <MDBCol lg="3" xs="6" sm="4" md="4">
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/flask.png"}
                                         alt="Flask"
                                         tooltip="Lightweight Python Micro Web Framework"
                                         text="Flask"
                                     />
-                                </Col>
-                                <Col lg={3} xs={6} sm={4} md={4}>
+                                </MDBCol>
+                                <MDBCol lg="3" xs="6" sm="4" md="4">
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/html.png"}
                                         alt="HTML 5"
                                         tooltip="Standard Markup Language for Web Browser Document"
                                         text="HTML5"
                                     />
-                                </Col>
-                                <Col lg={3} xs={6} sm={4} md={4}>
+                                </MDBCol>
+                                <MDBCol lg="3" xs="6" sm="4" md="4">
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/css.png"}
                                         alt="CSS Logo"
                                         tooltip="Style Sheet Language to Describe Presentation of Markup Document"
                                         text="CSS3"
                                     />
-                                </Col>
-                                <Col lg={3} xs={6} sm={4} md={4}>
+                                </MDBCol>
+                                <MDBCol lg="3" xs="6" sm="4" md="4">
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/js.png"}
                                         alt="Javascript"
                                         tooltip="Scripting Language to Describe Web Behavior"
                                         text="Javascript"
                                     />
-                                </Col>
-                                <Col lg={3} xs={6} sm={4} md={4}>
+                                </MDBCol>
+                                <MDBCol lg="3" xs="6" sm="4" md="4">
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/react.png"}
                                         alt="ReactJS"
                                         tooltip="Javascript Library for Building User Interfaces"
                                         text="React"
                                     />
-                                </Col>
-                                <Col lg={3} xs={6} sm={4} md={4}>
+                                </MDBCol>
+                                <MDBCol lg="3" xs="6" sm="4" md="4">
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/psd.png"}
                                         alt="Photoshop Logo"
                                         tooltip="Graphic Editor by Adobe"
                                         text="Adobe Photoshop"
                                     />
-                                </Col>
-                                <Col lg={3} xs={6} sm={4} md={4}>
+                                </MDBCol>
+                                <MDBCol lg="3" xs="6" sm="4" md="4">
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/ae.png"}
                                         alt="After Effect Logo"
                                         tooltip="Digital Visual Effect Composing by Adobe"
                                         text="Adobe After Effect"
                                     />
-                                </Col>
-                                <Col lg={3} xs={6} sm={4} md={4}>
+                                </MDBCol>
+                                <MDBCol lg="3" xs="6" sm="4" md="4">
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/prepro.png"}
                                         alt="Premiere Pro Logo"
                                         tooltip="Timeline Based Video Editing Software by Adobe"
                                         text="Adobe Premiere Pro"
                                     />
-                                </Col>
-                                <Col lg={3} xs={6} sm={4} md={4}>
+                                </MDBCol>
+                                <MDBCol lg="3" xs="6" sm="4" md="4">
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/ci.png"}
                                         alt="CodeIgniter"
                                         tooltip="Web MVC Framework on PHP"
                                         text="CodeIgniter"
                                     />
-                                </Col>
-                                <Col lg={3} xs={6} sm={4} md={4}>
+                                </MDBCol>
+                                <MDBCol lg="3" xs="6" sm="4" md="4">
                                     <SkillCard
                                         src={process.env.PUBLIC_URL + "/images/php-logo.png"}
                                         alt="PHP"
                                         tooltip="Programming Language for Website Development"
                                         text="PHP"
                                     />
-                                </Col>
-                            </Row>
+                                </MDBCol>
+                            </MDBRow>
                             {/* Showcase */}
 
-                        </section>
+                        </MDBBox>
                         {/* Skill */}
 
-                    </Row>
+                    </MDBRow>
                     {/* Lower Row */}
 
-                </Container>
+                </MDBContainer>
                 {/* About Me */}
 
                 {/* Contact Me */}
-                <div id="contact" className="pt-5 text-center container text-center">
+                <MDBContainer id="contact" className="pt-5 text-center">
 
-                    <a className="d-flex h-100 w-100 btn-highlight py-3" id="invite-btn" href="mailto:nael.nathanael71@gmail.com"> </a>
+                    <a className="d-flex h-100 w-100 btn-highlight pl-2 text-center py-3 text-decoration-none" id="invite-btn" href="mailto:nael.nathanael71@gmail.com"> </a>
 
-                    <i className={"text-white"}>or</i>
+                    <MDBBox tag="i" className={"text-white"}>or</MDBBox>
 
-                    <h1 className="py-3 text-white"><span className="contrass-text px-3 bg-white">Contact</span> Me</h1>
+                    <MDBTypography tag="h1" className="py-3 text-white"><span className="px-3 bg-white" style={{ color: "black" }}>Contact</span> Me</MDBTypography>
 
-                    <p id="contact-links" className="transition-smooth">
-                        <a href="https://web.facebook.com/nathanael089503386642">Facebook</a>
-                        <a href="https://api.whatsapp.com/send?phone=6289503386642">WhatsApp</a>
-                        <a href="https://twitter.com/L__NathanaeL">Twitter</a>
-                        <a href="https://www.linkedin.com/in/naelnathanael71/">LinkedIn</a>
-                        <a href="https://github.com/Nael-Nathanael">GitHub</a>
-                    </p>
+                    <MDBBox tag="p" className="m-0 pb-3">
+                        <a className="text-white text-decoration-none mx-1" href="https://web.facebook.com/nathanael089503386642">Facebook</a>
+                        <a className="text-white text-decoration-none mx-1" href="https://api.whatsapp.com/send?phone=6289503386642">WhatsApp</a>
+                        <a className="text-white text-decoration-none mx-1" href="https://twitter.com/L__NathanaeL">Twitter</a>
+                        <a className="text-white text-decoration-none mx-1" href="https://www.linkedin.com/in/naelnathanael71/">LinkedIn</a>
+                        <a className="text-white text-decoration-none mx-1" href="https://github.com/Nael-Nathanael">GitHub</a>
+                    </MDBBox>
 
-                </div>
+                </MDBContainer>
                 {/* Contact Me */}
-            </div>
+            </MDBBox>
         )
     }
 }
