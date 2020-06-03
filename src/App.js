@@ -5,7 +5,6 @@ import {
     Route
 } from "react-router-dom";
 import index from 'pages/landing/index';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactTooltip from 'react-tooltip';
 import Base from 'pages/admin/Base';
 
@@ -14,7 +13,7 @@ function App() {
         <Router>
             <ReactTooltip className="text-center" style={{ width: "200px" }} />
             <Switch>
-                <Route exact path="/admin" component={Base} />
+                <Route path="/admin" component={Base} />
                 <Route exact path="/" component={index} />
             </Switch>
         </Router>

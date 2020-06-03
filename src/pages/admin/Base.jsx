@@ -1,16 +1,29 @@
-import React, { Component } from 'react'
-import SideNav from 'components/Navigation/SideNav'
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import 'mdbreact/dist/css/mdb.css';
+import React, { Component } from 'react';
+import SideNavigation from 'components/Navigation/sideNavigation';
+import TopNavigation from 'components/Navigation/topNavigation';
+import { getSortedRoute } from 'Config/SystemService/Routing';
+import { admin_url } from 'Config/UrlConfig_admin';
+import { Route, withRouter, Switch } from 'react-router-dom';
+import classes from './base.module.css';
 
-export class Base extends Component {
+class Base extends Component {
+
     render() {
+        
         return (
-            <div className="bg-black w-100" style={{ height: "100vh" }}>
-                <SideNav />
+            <div className={["flexible-content blue-gradient", classes.bger].join(" ")}>
+                <TopNavigation />
+                <SideNavigation />
+                <main id="content" className="p-5">
+                    <Switch>
+                        {getSortedRoute(admin_url).map((e, index) =>
+                            <Route path={e.link} component={e.component} key={index} />
+                        )}
+                    </Switch>
+                </main>
             </div>
-        )
+        );
     }
 }
 
-export default Base
+export default withRouter(Base);
