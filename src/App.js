@@ -8,12 +8,14 @@ import index from 'pages/landing/index';
 import ReactTooltip from 'react-tooltip';
 import Base from 'pages/admin/Base';
 import Login from 'pages/login/Login';
+import AnimeJSPage from 'pages/AnimeJSPage';
 
 function App() {
     return (
         <Router>
             <ReactTooltip className="text-center" style={{ width: "200px" }} />
             <Switch>
+                <Route path="/animejs" component={AnimeJSPage} />
                 <Route path="/admin" component={Base} />
                 <Route path="/login" component={Login} />
                 <Route exact path="/" component={index} />
