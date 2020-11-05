@@ -31,9 +31,11 @@
                 {organization}
 
                 <p class="m-0">
-                    <span class="font-weight-bold">{start}</span>
-                    -
-                    <span class="font-weight-bold">{end}</span>
+                    {#if start}
+                        <span class="font-weight-bold">{start}</span>
+                        -
+                        <span class="font-weight-bold">{end}</span>
+                    {:else}<span class="font-weight-bold">Present</span>{/if}
                 </p>
                 <p class="description">{descriptions}</p>
             </div>

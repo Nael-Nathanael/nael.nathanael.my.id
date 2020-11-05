@@ -112,6 +112,35 @@ export class NaelSiteService {
                     iconWithIdentifier: true,
                     descriptions: "Currently working at Altha Consulting, IT Division. Colaborating on several web-based internal information system development for Altha Consulting Divisions"
                 },
+                {
+                    organization: "Freelancer",
+                    location: "Online",
+                    role: "Website and Web Application Projects",
+                    icon: "/images/freelancer.png",
+                    descriptions: "Having online classes at morning and working as intern at afternoon does not mean that one should do nothing for the rest of the day. I also open as freelancer for website and web application projects."
+                },
+            ]
+        }
+        return data;
+    }
+
+    getHobby() {
+        let data = {
+            data: [{
+                    organization: "Web Development",
+                    icon: "/images/weblogo.png",
+                    descriptions: "Learning many approaches and best practices of web development"
+                },
+                {
+                    organization: "Android Apps Development",
+                    icon: "/images/android_studio.png",
+                    descriptions: "Learning flutter framework and native android apps development"
+                },
+                {
+                    organization: "Chess",
+                    icon: "/images/chess.png",
+                    descriptions: "Playing chess on my free time"
+                },
             ]
         }
         return data;
