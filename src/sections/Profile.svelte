@@ -4,8 +4,8 @@
 
 <style>
     #profile {
-        height: 50vh;
-        margin: 6em 0;
+        min-height: 50vh;
+        margin: 3em 0;
     }
 
     .contrass-text {
@@ -39,7 +39,7 @@
             </Col>
             <Col md="8">
                 <div class="h-100 d-flex align-items-center wow bounceInUp">
-                    <div class="px-3 mb-5">
+                    <div class="px-3 mb-0 mb-md-5">
                         <h1 class="text-white font-weight-bold mb-3">
                             Call me
                             <span
