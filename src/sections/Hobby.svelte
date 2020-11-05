@@ -18,7 +18,7 @@
 
 <div id="hobby">
     <Container>
-        <h3 class="text-center text-light">Hobby</h3>
+        <h3 class="text-center text-light">What I do in spare time</h3>
         <Row class="d-flex justify-content-around" noGutters>
             {#each naelSiteService.getHobby().data as { icon, organization, iconWithIdentifier }}
                 <Col

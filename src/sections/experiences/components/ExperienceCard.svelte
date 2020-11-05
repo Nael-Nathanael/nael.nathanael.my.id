@@ -1,5 +1,5 @@
 <script>
-    import { Row, Col, Card } from "sveltestrap";
+    import { Card } from "sveltestrap";
 
     export let icon, organization, descriptions, start, end;
 </script>

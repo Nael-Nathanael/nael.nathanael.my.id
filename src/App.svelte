@@ -5,6 +5,8 @@
 	import Hobby from "./sections/Hobby.svelte";
 	import Profile from "./sections/Profile.svelte";
 	import Projects from "./sections/Projects.svelte";
+	import Skills from "./sections/Skills.svelte";
+	import Footer from "./sections/Footer.svelte";
 </script>
 
 <Header />
@@ -22,3 +24,7 @@
 		</Col>
 	</Row>
 </Container>
+<div class="py-md-5 py-0" />
+<Skills />
+<div class="py-md-5 py-0" />
+<Footer />

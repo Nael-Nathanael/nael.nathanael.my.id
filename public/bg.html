@@ -1,7 +1,65 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="./css/aesir.css">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+        
+        html,
+        body {
+            overflow: hidden;
+        }
+        
+        .scene {
+            height: 100%;
+        }
+        
+        .bot {
+            top: 90% !important;
+            animation-name: righter;
+            transform: rotate(180deg) !important;
+        }
+        
+        .top {
+            top: 10% !important;
+            animation-name: lefter;
+        }
+        
+        .line {
+            animation-duration: 4000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            width: 200%;
+            position: absolute;
+            background: url("../images/cYtus_top_border.png") repeat-x;
+            height: 3px;
+        }
+        
+        @keyframes lefter {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: -200px;
+            }
+        }
+        
+        @keyframes righter {
+            0% {
+                left: -200px;
+            }
+            100% {
+                left: 0;
+            }
+        }
+    </style>
 </head>
 
 <body>

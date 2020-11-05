@@ -4,7 +4,7 @@ export class NaelSiteService {
         let data = {
             data: [{
                     title: "Date of Birth",
-                    value: "22/09/99"
+                    value: "22/09/1999"
                 },
                 {
                     title: "Nationality",
@@ -140,6 +140,80 @@ export class NaelSiteService {
                     organization: "Chess",
                     icon: "/images/chess.png",
                     descriptions: "Playing chess on my free time"
+                },
+            ]
+        }
+        return data;
+    }
+
+    getMajorSkills() {
+        let data = {
+            data: [{
+                    title: "Java",
+                    icon: "/images/java.png",
+                },
+                {
+                    title: "Python",
+                    icon: "/images/python.png",
+                },
+                {
+                    title: "PHP",
+                    icon: "/images/php.png",
+                },
+                {
+                    title: "Go",
+                    icon: "/images/go.png",
+                },
+                {
+                    title: "Spring Boot",
+                    icon: "/images/springboot.png",
+                },
+                {
+                    title: "Django",
+                    icon: "/images/django.png",
+                },
+                {
+                    title: "Flask",
+                    icon: "/images/flask.png",
+                },
+                {
+                    title: "HTML, CSS, JS",
+                    icon: "/images/fullweb.png",
+                },
+                {
+                    title: "React JS",
+                    icon: "/images/reactjs.png",
+                },
+                {
+                    title: "CodeIgniter",
+                    icon: "/images/cilogo.png",
+                },
+                {
+                    title: "Svelte",
+                    icon: "/images/svelte.png",
+                },
+                {
+                    title: "MySQL",
+                    icon: "/images/mysql.png",
+                },
+            ]
+        }
+        return data;
+    }
+
+    getMinorSkills() {
+        let data = {
+            data: [{
+                    title: "Adobe Photoshop",
+                    icon: "/images/photoshop.png",
+                },
+                {
+                    title: "Adobe After Effects",
+                    icon: "/images/ae.png",
+                },
+                {
+                    title: "Adobe Premiere Pro",
+                    icon: "/images/pr.png",
                 },
             ]
         }

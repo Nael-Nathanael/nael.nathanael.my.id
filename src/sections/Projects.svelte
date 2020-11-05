@@ -18,7 +18,7 @@
 
 <div id="projects">
     <Container>
-        <h3 class="text-center text-light">Projects</h3>
+        <h3 class="text-center text-light">Completed Projects</h3>
         <Row class="d-flex justify-content-around mt-3" noGutters>
             {#each naelSiteService.getProjects().data as { icon, organization, iconWithIdentifier }}
                 <Col

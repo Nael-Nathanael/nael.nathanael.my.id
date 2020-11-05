@@ -47,13 +47,15 @@
                         </h1>
                         <div>
                             <p class="description">
-                                A hardworking and ambitious person in every
-                                aspects. I have a great passion for web
-                                developments. Having experience in web
-                                development project team, I am eager to be
-                                challenged in order to grow and further improve.
-                                Currently an undergraduate student of
-                                Information System study in University of
+                                Work smart, work hard, and work fast. Always
+                                serve the best on both design and performance
+                                aspects. Ambitious and deliver earlier than the
+                                dateline without neglecting the quality. Having
+                                a great passion for website and web application
+                                developments, I always eager to be challenged in
+                                order to grow and further improve. Currently a
+                                freelancer, an intern, and a final year student
+                                of Information System study in University of
                                 Indonesia.
                             </p>
                         </div>
