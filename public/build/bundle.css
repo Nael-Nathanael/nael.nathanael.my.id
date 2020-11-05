@@ -1,0 +1,12 @@
+footer.svelte-1lt3vcz{padding-bottom:3rem}
+#hobby.svelte-10g1jl3{margin-bottom:3rem}.svelte-10g1jl3{color:black}
+#profile.svelte-1gdri8y{min-height:50vh;margin:3em 0}.contrass-text.svelte-1gdri8y{color:black}.size-control.svelte-1gdri8y{max-height:400px}.description.svelte-1gdri8y{font-size:20px;line-height:1.8;font-family:"Raleway", "Open Sans", sans-serif;color:#fff;text-align:justify}
+#projects.svelte-1kifcpd{margin-bottom:3rem}.svelte-1kifcpd{color:black}
+#skill.svelte-6iwtbo{margin-bottom:3rem}.svelte-6iwtbo{color:black}
+.icon_card.svelte-z1rh54{height:150px;width:150px;margin:10px 1.25rem 1.25rem 1.25rem}.insideImage.svelte-z1rh54{max-width:100%;height:auto}
+#experience.svelte-9smr96{padding-bottom:3rem}.svelte-9smr96{color:black}
+.paddingRightNormal.svelte-jh5zpk{padding-right:1.25rem}.description.svelte-jh5zpk{text-align:justify}
+header.svelte-sjwy0o{min-height:100vh;display:flex;align-items:center;padding-top:1rem;padding-bottom:1rem}#click_invite.svelte-sjwy0o{right:30vw;top:15vh;animation-duration:3000ms;animation-iteration-count:infinite;animation-timing-function:ease-in-out;animation-direction:alternate;animation-name:svelte-sjwy0o-fade;color:grey;font-size:24px}@keyframes svelte-sjwy0o-fade{0%{opacity:1}100%{opacity:0}}
+.custom-animated.svelte-195uhj5{animation-iteration-count:1;animation-timing-function:ease-in;animation-duration:0.5s;animation-fill-mode:forwards}.fade-in.svelte-195uhj5{animation-name:svelte-195uhj5-fadeInOpacity}.fade-out.svelte-195uhj5{animation-name:svelte-195uhj5-fadeOutOpacity}.black.svelte-195uhj5{color:black}.profile_card.svelte-195uhj5{width:100%;max-width:300px}@keyframes svelte-195uhj5-fadeInOpacity{0%{opacity:0}100%{opacity:1}}@keyframes svelte-195uhj5-fadeOutOpacity{0%{opacity:1}100%{opacity:0}}
+
+/*# sourceMappingURL=bundle.css.map */
