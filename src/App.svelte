@@ -1,6 +1,6 @@
 <script>
 	import { Col, Container, Row } from "sveltestrap";
-	import Header from "./sections/Header.svelte";
+	import Header from "./sections/header/Header.svelte";
 	import Profile from "./sections/Profile.svelte";
 	import Experience from "./sections/Experience.svelte";
 </script>
