@@ -90,4 +90,30 @@ export class NaelSiteService {
         }
         return data;
     }
+
+    getExperiences() {
+        let data = {
+            data: [{
+                    organization: "DSC UI 2020",
+                    location: "Universitas Indonesia",
+                    role: "Active Member",
+                    start: "10/2020",
+                    end: "present",
+                    icon: "/images/dsc.png",
+                    descriptions: "Active member of Developer Student Club, University of Indonesia 2020."
+                },
+                {
+                    organization: "Altha Consulting",
+                    location: "Indonesia",
+                    role: "Web Developer Specialist Intern",
+                    start: "05/2020",
+                    end: "present",
+                    icon: "/images/altha.png",
+                    iconWithIdentifier: true,
+                    descriptions: "Currently working at Altha Consulting, IT Division. Colaborating on several web-based internal information system development for Altha Consulting Divisions"
+                },
+            ]
+        }
+        return data;
+    }
 }
