@@ -3,16 +3,23 @@
 </script>
 
 <footer>
-  <Container>
-    <p class="text-center m-0">Website written in Svelte</p>
-    <p class="text-center m-0">Designed by Nathanael</p>
-    <p class="text-center m-0">Content written at 5 November 2020</p>
-    <p class="text-center">Deployed at 5 November 2020</p>
+  <Container fluid>
+    <div>
+      <small>
+        Written on Sapper with Svelte; Personal design concept; Last update 6
+        March 2021; Next update 13 March 2021
+      </small>
+    </div>
   </Container>
 </footer>
 
 <style>
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   footer {
-    padding-bottom: 3rem;
+    padding-bottom: 1em;
   }
 </style>

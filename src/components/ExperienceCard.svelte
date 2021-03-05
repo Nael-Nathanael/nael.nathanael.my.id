@@ -23,10 +23,12 @@
 
         <p class="m-0">
           {#if start}
-            <span class="font-weight-bold">{start}</span>
+            <span>{start}</span>
             -
-            <span class="font-weight-bold">{end}</span>
-          {:else}<span class="font-weight-bold">Present</span>{/if}
+            <span>{end}</span>
+          {:else}
+            <span>Present</span>
+          {/if}
         </p>
         <p class="description">{descriptions}</p>
       </div>
@@ -38,7 +40,15 @@
   .paddingRightNormal {
     padding-right: 1.25rem;
   }
-  .description {
+  p {
     text-align: justify;
+  }
+
+  * {
+    color: black;
+  }
+
+  span {
+    font-weight: bold;
   }
 </style>

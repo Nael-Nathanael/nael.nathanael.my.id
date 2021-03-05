@@ -1,32 +1,24 @@
 <script>
   import { Card, Col, Row } from "sveltestrap";
-  import { slide } from "svelte/transition";
-  import { NaelSiteService } from "../services/NaelSiteService";
+  import { slide, fade } from "svelte/transition";
+  import { onMount } from "svelte";
   export let simpleMode;
-  let naelservice = new NaelSiteService();
   let title = ["WEB DEVELOPER", "SOFTWARE ENGINEER"];
   let index = 0;
-  let currClass = " fade-in";
-  let counter = 0;
+
   setInterval(() => {
-    if (counter == 3) {
-      currClass = " fade-out";
-      counter++;
-    } else if (counter == 4) {
-      if (index >= title.length - 1) {
-        index = 0;
-      } else {
-        index++;
-      }
-      currClass = " fade-in";
-      counter = 0;
-    } else {
-      counter++;
-    }
-  }, 500);
+    index = index == title.length - 1 ? 0 : index + 1;
+  }, 3000);
+
+  let fetchPersonalData;
+  onMount(async () => {
+    fetchPersonalData = await fetch(
+      "https://api.npoint.io/6f3008f88b623358a927"
+    ).then((x) => x.json());
+  });
 </script>
 
-{#if simpleMode}
+{#if simpleMode || !fetchPersonalData}
   <div
     transition:slide
     class="align-items-center d-flex justify-content-center flex-column"
@@ -39,9 +31,15 @@
     />
     <div>
       <h1 class="text-center mb-0">NATHANAEL</h1>
-      <h3 class={"text-center custom-animated" + currClass}>
-        {title[index]}
-      </h3>
+      {#key index}
+        <h3
+          class={"text-center"}
+          in:fade={{ duration: 500 }}
+          out:fade={{ delay: -500 }}
+        >
+          {title[index]}
+        </h3>
+      {/key}
     </div>
   </div>
 {:else}
@@ -68,28 +66,39 @@
                   />
                   <div>
                     <h3 class="text-center mb-0 black">NATHANAEL</h3>
-                    <h5 class={"black text-center custom-animated" + currClass}>
-                      {title[index]}
-                    </h5>
+                    {#key index}
+                      <h5
+                        class={"black"}
+                        in:fade={{ duration: 500 }}
+                        out:fade={{ delay: -500 }}
+                      >
+                        {title[index]}
+                      </h5>
+                    {/key}
                   </div>
                 </div>
               </Col>
-              <Col xs="12" class="h-100">
-                <h4 class="black">Personal Info</h4>
-                <hr />
-                <Row>
-                  {#each naelservice.getPersonalInformations().data as { title, value }}
-                    <Col xs="12">
-                      <span class="black font-weight-bold">
-                        {title}
-                      </span>
-                    </Col>
-                    <Col xs="12" class="mb-2">
-                      <span class="black"> {value} </span>
-                    </Col>
-                  {/each}
-                </Row>
-              </Col>
+              {#await fetchPersonalData}
+                <!-- promise is pending -->
+              {:then fetchPersonalData}
+                <!-- promise was fulfilled -->
+                <Col xs="12" class="h-100">
+                  <h4 class="black">Personal Info</h4>
+                  <hr />
+                  <Row>
+                    {#each fetchPersonalData.data as { title, value }}
+                      <Col xs="12">
+                        <span class="black font-weight-bold">
+                          {title}
+                        </span>
+                      </Col>
+                      <Col xs="12" class="mb-2">
+                        <span class="black"> {value} </span>
+                      </Col>
+                    {/each}
+                  </Row>
+                </Col>
+              {/await}
             </Row>
           </div>
         </Card>
@@ -99,39 +108,7 @@
 {/if}
 
 <style>
-  .custom-animated {
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-  }
-  .fade-in {
-    animation-name: fadeInOpacity;
-  }
-  .fade-out {
-    animation-name: fadeOutOpacity;
-  }
   .black {
     color: black;
-  }
-  .profile_card {
-    width: 100%;
-    max-width: 300px;
-  }
-  @keyframes fadeInOpacity {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes fadeOutOpacity {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
   }
 </style>

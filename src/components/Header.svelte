@@ -2,12 +2,9 @@
   import { Container } from "sveltestrap";
   import ProfileCard from "../components/ProfileCard.svelte";
   let simpleMode = true;
-  function toggleMode() {
-    simpleMode = !simpleMode;
-  }
 </script>
 
-<header on:click={() => toggleMode()}>
+<header on:click={() => (simpleMode = !simpleMode)}>
   <iframe
     src="./bg.html"
     class="w-100 h-100"
@@ -15,9 +12,7 @@
     title="aesir cytus bg"
     style="position: absolute; z-index: -1"
   />
-  <div style="position: absolute; z-index: -1" id="click_invite">
-    Try to click
-  </div>
+  <div>Try to click</div>
   <Container>
     <ProfileCard {simpleMode} />
   </Container>
@@ -31,7 +26,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-  #click_invite {
+  div {
     right: 30vw;
     top: 15vh;
     animation-duration: 3000ms;
@@ -41,6 +36,8 @@
     animation-name: fade;
     color: grey;
     font-size: 24px;
+    position: absolute;
+    z-index: -1;
   }
   @keyframes fade {
     0% {
