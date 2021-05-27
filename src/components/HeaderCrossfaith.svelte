@@ -12,9 +12,8 @@
     title="aesir cytus bg"
     style="position: absolute; z-index: -1"
   />
-  <div>Try to click</div>
   <Container>
-    <ProfileCard {simpleMode} />
+    <h1 class="display-1 text-center">CrossFaith DevTeam</h1>
   </Container>
 </header>
 

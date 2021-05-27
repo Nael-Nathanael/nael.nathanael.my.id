@@ -11,20 +11,20 @@
 
 <Header />
 <Profile />
-<div class="py-md-5 py-0" />
+<div class="py-md-5 py-0"></div>
 <Projects />
-<div class="py-md-5 py-0" />
+<div class="py-md-5 py-0"></div>
 <Container>
   <Row noGutters>
-    <Col xs="12" md="8">
+    <Col md="8" xs="12">
       <Experience />
     </Col>
-    <Col xs="12" md="4">
+    <Col md="4" xs="12">
       <Hobby />
     </Col>
   </Row>
 </Container>
-<div class="py-md-5 py-0" />
+<div class="py-md-5 py-0"></div>
 <Skills />
-<div class="py-md-5 py-0" />
+<div class="py-md-5 py-0"></div>
 <Footer />
