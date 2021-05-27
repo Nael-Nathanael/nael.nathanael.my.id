@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21cfa016-6bf4-44a2-86fa-de2299ee0a49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/setupTypeScript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ambient.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ExperienceCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ExperienceCard.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/IconCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IconCard.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProfileCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProfileCard.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Experience.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Experience.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Hobby.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Hobby.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Profile.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Profile.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Project.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Project.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Skill.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Skill.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/node_modules/images/successkid.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service-worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template.html" beforeDir="false" />
-    </list>
+    <list default="true" id="21cfa016-6bf4-44a2-86fa-de2299ee0a49" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
